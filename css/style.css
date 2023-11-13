@@ -1,0 +1,75 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: bisque;  
+    color: white;
+    margin: 0; 
+    font-family: Arial;
+
+}
+
+.pa-10 { /* sukurta klase ar kazkas pan padaryti padding visam header, susieta su html*/
+    padding: 10px;
+}
+
+
+header {
+    background-color: #333333;
+    display: flex; /* padaro horizontalu*/
+
+}
+
+.logo {
+    flex-grow: 1; /* 1 is 6 bloko dydis*/
+    background-color: aqua;  
+
+}
+
+nav {
+    flex-grow: 4; /* 4 is 6 bloko dydis*/
+    background-color: blueviolet;
+    font-weight: 600; /* bold font*/
+    text-transform: uppercase; /* didziosios raides*/
+}
+
+ul { /* tevinis */
+    margin: 0; /* dedam vaikiniui*/
+    padding: 0; /* dedam vaikiniui*/
+    display: flex; 
+
+}
+
+li { /* vaikinis be bullet points*/
+    list-style-type: none; /* be buttel pointu*/
+    padding: 0 10px; /* padding is sonu*/
+    transition: 2s; /* hoverio laikas*/
+}
+
+li:hover {
+    color: #2f7e96; /* hoverio spalva*/
+
+}
+
+.social-links {
+    flex-grow: 1; /* 1 is 6  bloku headrey*/
+    background-color: blue; /* 1 is 6 bloko spalva*/
+
+}
+
+.hero {
+    
+    height: 100vh;/* vaizdas per visa hero*/
+
+
+        background: url("https://geographical.co.uk/wp-content/uploads/Night-sky-photography.jpg") no-repeat center center fixed; /* centruota*/
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+ 
+
+}
